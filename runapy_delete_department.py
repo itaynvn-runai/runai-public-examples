@@ -1,12 +1,9 @@
+# follow instructions in official documentation to initiate a client:
+# https://pypi.org/project/runapy/
+# https://github.com/runai-professional-services/runapy
+
 from runai.client import RunaiClient
 from runai.errors import RunaiHTTPError
-
-# set cluster / app details
-realm="" # keycloak realm name
-client_id="" # application id
-client_secret="" # application secret
-runai_base_url="" # for saas use https://<TENANT>.run.ai
-cluster_id="" # ???
 
 def get_project_info(project_id):
     project = client.projects.get(int(project_id))
